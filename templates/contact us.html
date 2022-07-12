@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contact us</title>
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<!--    <link rel="stylesheet" type="text/css" href="../static/css/w3.css">-->
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+	<script type="text/javascript"src= "../static/js/mugi.js"></script>
+	<!-- js/jquery.js -->
+	<!--  https://code.jquery.com/jquerry-3.4.1.slim.min.js -->
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+<body>
+{%include'header.html'%}
+
+    <section class="row bg-dark text-white text-center">
+	<div class="col-md-12">
+		<h2>CONTACT US</h2>
+		<p>Please contact us via email or phone</p>
+		<h2>+254 314 659 703</h2>
+		<h2>+254 777 543 225</h2>
+		<p>sales@shine properties.com</p>
+		<p>shine properties limited</p>
+		<p>P.O.Box 1575 Nairobi</p>
+		<p>copyright 2020</p>
+	</div>
+</section>
+<section class="row jumbotron">
+	<div class="col-md-6 container">
+		<h2>NEWSLETTER</h2>
+		<P>Subscribe to uur newsletter </P>
+		<form action="/contact us"method="post">
+			<label>Name</label>
+			<br><br>
+			<input type="text" name="first name" placeholder="First name">
+			<br><br>
+			<input type="text" name="last name" placeholder="Last name">
+			<br><br>
+			<input type="email" name="your email" placeholder="email">
+			<br><br>
+			<input type="submit" name="subscribe" >
+			<p>{{msg}}</p>
+		</form>
+	</div>
+	<div class="col-md-6 container">
+		<h2>Mesage us</h2>
+		<p>Please fill out the form below to get in touch</p>
+		<form action="/contact us"method="get">
+			<label>Name*</label>
+			<br>
+			<input type="text" name="first name" placeholder="First name">
+			<br><br>
+			<input type="text" name="last name" placeholder="Last name">
+			<br>
+			<label>Phone*</label>
+			<br>
+			<input type="tel" name="phone number" placeholder="Phone number">
+			<br>
+			<label>Email*</label>
+			<br>
+			<input type="email" name="your email" placeholder="Email">
+			<br>
+			<label>Address*</label>
+			<br>
+			<select name="location">
+				<option>nairobi</option>
+				<option>mombasa</option>
+				<option>kisumu</option>
+			</select>
+			<br>
+
+			<label>how did you find us?</label>
+			<br>
+			<select name="know">
+				<option>Friend</option>
+				<option>Social media</option>
+				<option>Advertisements</option>
+			</select>
+			<br><br><label>Type your message</label>
+			<br>
+			<textarea name="message"placeholder="A maximum of 50 characters"></textarea>
+			<br>
+			<input type="submit" name="submit">
+			<p>{{msg}}</p>
+		</form>
+	</div>
+</section>
+
+</body>
+</html>

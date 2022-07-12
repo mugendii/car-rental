@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GABRIEL</title>
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/w3.css">
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+	<script type="text/javascript"src= "../static/js/jquery.js"></script>
+	<!-- js/jquery.js -->
+	<script type="text/javascript"src= "   https://code.jquery.com/jquerry-3.4.1.slim.min.js" ></script>
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	<style>
+		#bg {
+		  position: fixed;
+		  top: -50%;
+		  left: -50%;
+		  width: 200%;
+		  height: 200%;
+		}
+		#bg img {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  margin: auto;
+		  min-width: 50%;
+		  min-height: 50%;
+		 }
+	</style>
+
+</head>
+<body>
+{%include'header.html'%}
+
+
+	<div id="bg">
+		<img src="../static/images/mugi5.jpeg" alt="">
+	</div>
+
+<section class="jumbotron row ">
+    <div class="col-md-12 font-weight-normal text-center">
+        <h3>{{msg}}</h3>
+        <fieldset>
+            <legend>RESERVE A VEHICLE</legend>
+
+            <form action="/appointments"method="post">
+				<label for="">Enter your name</label>
+                <input type="text" name="names" placeholder="full names"><br><br>
+				<label for="">Enter your email</label>
+                <input type="email "name="email" placeholder="email"><br><br>
+				<label for="">Enter your phone number</label>
+                <input type="tel" name="phone" placeholder="phone number"><br><br>
+				<label for="">Enter your nationality</label>
+                <input type="text" name="nationality" placeholder="nationality"><br><br>
+				<label for="">Enter your address</label>
+                <input type="text" name="address" placeholder="Your address"><br><br>
+                <label for="">Enter pick up date</label><br>
+                <input type="date" name="pick_date"><br><br>
+				<label for="">Enter return date</label><br>
+                <input type="date" name="return_date"><br><br>
+                <label for="">Enter pick up time</label><br>
+                <input type="time" name="pick_time"><br><br>
+                <label for="">choose pick up place</label><br>
+                <select name="office" id="">
+                    <option value="gigiri">gigiri</option>
+                    <option value="kileleshwa">kileleshwa</option>
+                    <option value="kilimani">kilimani</option>
+                    <option value="karen">karen</option>
+                    <option value="westlands">westlands</option>
+                    <option value="wilson airport">wilson airport</option>
+                    <option value="JKIA airport">JKIA airport</option>
+                </select><br><br>
+                <label for="">Select vehicle</label>
+                <select name="vehicle" id="">
+                    <option value="Fielder">Fielder</option>
+                    <option value="Toyota axio">Toyota axio</option>
+                    <option value="Mark X">Mark X</option>
+                    <option value="benz">benz</option>
+                    <option value="benz">benz</option>
+                    <option value="benz">benz</option>
+                    <option value="Toyota hiace">Toyota hiace</option>
+                    <option value="Alphard">Alphard</option>
+                    <option value="Van guard">Van guard</option>
+					<option value="prado">Prado</option>
+					<option value="rav_4">Rav 4</option>
+					<option value="coaster">Toyota coaster</option>
+					<option value="bus">bus</option>
+					<option value="double">Double decker</option>
+                </select><br><br>
+                <label for="">Consultancy fee</label>
+                <input type="text"name="fee"class="readonly"value="200"><br><br>
+                <input type="submit">
+            </form>
+
+        </fieldset>
+    </div>
+    <hr>
+
+</section>
+{%include'footer.html'%}
+</body>
+</html>
