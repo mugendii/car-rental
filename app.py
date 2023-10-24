@@ -3,7 +3,7 @@ from flask import session
 from flask import request
 from flask import redirect
 import pymysql
-from wtforms import Form, StringField, TextAreaField, PasswordField, validators, SelectField
+#from wtforms import Form, StringField, TextAreaField, PasswordField, validators, SelectField
 """from passlib.hash import sha256_crypt
 from functools import wraps
 from flask_uploads import UploadSet, configure_uploads, IMAGES"""
